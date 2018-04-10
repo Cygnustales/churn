@@ -1,0 +1,69 @@
+{
+  "list":[
+    {
+        "name" : "Hadoop",
+        "logo" : "./assets/logo/hadoop.png"
+    },
+    {
+        "name" : "Hive",
+        "logo" : "./assets/logo/hive.png"
+    },
+    {
+        "name" : "Apache Pig",
+        "logo" : "./assets/logo/pig.png"
+    },
+    {
+        "name" : "Storm",
+        "logo" : "./assets/logo/storm.png"
+    },
+    {
+        "name" : "Spark",
+        "logo" : "./assets/logo/spark.png"
+    },
+    {
+        "name" : "MySql",
+        "logo" : "./assets/logo/mysql.png"
+    },
+    {
+        "name" : "PostgreSQL",
+        "logo" : "./assets/logo/postgresql.png"
+    },
+    {
+        "name" : "Oracle",
+        "logo" : "./assets/logo/oracle.png"
+    },
+    {
+        "name" : "Redis",
+        "logo" : "./assets/logo/redis.png"
+    },
+    {
+        "name" : "MongoDB",
+        "logo" : "./assets/logo/mongodb.png"
+    },
+    {
+        "name" : "Google Analytics",
+        "logo" : "./assets/logo/google-analytics.png"
+    },
+    {
+        "name" : "Kibana",
+        "logo" : "./assets/logo/kibana.png"
+    },
+    {
+        "name" : "Elastic Search",
+        "logo" : "./assets/logo/elastic.png"
+    },
+    {
+        "name" : "Sales Force",
+        "logo" : "./assets/logo/salesforce.png"
+    },
+    {
+        "name" : "Big Query",
+        "logo" : "./assets/logo/bigquery.png"
+    },
+    {
+        "name" : "Hbase",
+        "logo" : "./assets/logo/hbase.png"
+    }
+
+    ]
+}
