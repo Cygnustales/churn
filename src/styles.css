@@ -63,7 +63,7 @@
     display: inline-block;
 }
 .line-chart{
-    width: 20rem;
+    width: 18rem;
     height: 10rem;
 }
 .map-container{
@@ -80,4 +80,10 @@
     font-size: .5rem;
     font-weight: bold;
     text-align: center;
+}
+.predict{
+    width: 50%;
+    background-color:red;
+    height: 10rem;
+    position: absolute;
 }
