@@ -1,0 +1,47 @@
+
+<div class="main-container">
+  
+    <header class="header header-2">
+        <div class="branding">
+            <a href="..." class="nav-link">
+                <clr-icon shape="block"></clr-icon>
+                <span class="title">Company</span>
+            </a>
+        </div>
+       
+        <!--<form class="search">
+            <label for="search_input1">
+                <input id="search_input1" placeholder="Search for keywords..." type="text">
+            </label>
+        </form>-->
+        <div class="header-actions">
+            <clr-dropdown [clrCloseMenuOnItemClick]="false">
+                <button type="button" clrDropdownTrigger>
+                    <clr-icon shape="user" size="24"></clr-icon>
+                    <clr-icon shape="caret down"></clr-icon>
+                </button>
+                <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+                    <label class="dropdown-header">Dropdown header</label>
+                    <button type="button" clrDropdownItem>Action 1</button>
+                    <button type="button" clrDropdownItem>Action 2</button>
+                    <div class="dropdown-divider"></div>
+                    <button type="button" clrDropdownItem>Link 1</button>
+                    <button type="button" clrDropdownItem>Link 2</button>
+                </clr-dropdown-menu>
+            </clr-dropdown>
+        </div>
+    </header>
+    <div class="content-container">
+        <div class="content-area">
+          <app-database *ngIf="database" (messageEvent)="receiveMessage($event)"></app-database>
+          <app-dashboard *ngIf="dashboard" (messageEvent)="receiveMessage($event)"></app-dashboard>
+        </div>
+        <nav class="sidenav">
+            <div class="side-padding" *ngIf="!database" (click)="DatabaseButton()"><clr-icon shape="storage" class="is-solid"></clr-icon> <span>Connect Database</span></div>
+            <div class="side-padding-off" *ngIf="database"><clr-icon shape="storage" class="has-badge is-solid"></clr-icon> <span>Connect Database</span></div>
+            <div class="side-padding" *ngIf="!dashboard" (click)="DashboardButton()"><clr-icon shape="dashboard" class="is-solid"></clr-icon> <span>Dashboard</span></div>
+            <div class="side-padding-off" *ngIf="dashboard"><clr-icon shape="dashboard" class="has-badge is-solid"></clr-icon> <span>Dashboard</span></div>
+        </nav>
+    </div>
+  </div>
+ 

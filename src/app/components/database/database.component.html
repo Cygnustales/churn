@@ -1,0 +1,31 @@
+
+
+<div class="selecting-box">
+    <p class="select-title" >Select One for Importing</p>
+    <div class="radio-inline select-margin">
+        <input type="radio" name="gridRadios1" (change)="select('Customer Profile')" id="checkrads_11" checked>
+        <label for="checkrads_11">Customer Profile</label>
+    </div>
+    <div class="radio-inline select-margin">
+        <input type="radio" name="gridRadios1" id="checkrads_12" (change)="select('Daily Transactions')">
+        <label for="checkrads_12">Daily Transactions</label>
+    </div>
+    <div class="radio-inline select-margin">
+        <input type="radio" name="gridRadios1" id="checkrads_13" (change)="select('Marketing (Historical)')">
+        <label for="checkrads_13">Marketing (Historical)</label>
+    </div>
+    <div class="radio-inline select-margin">
+        <input type="radio" name="gridRadios1" id="checkrads_14" (change)="select('Marketing (planed)')">
+        <label for="checkrads_14">Marketing (planed)</label>
+    </div>
+</div>
+<div class="search-box">
+  <input id="search_input1" [(ngModel)]="dbname" class="search-input"  placeholder="Search for DB to Connect..." type="text">
+</div>
+
+<div *ngFor="let list of DBlist | searchFilter: dbname">
+  <div class="db-box" align="center" (click)="openModal(list)">
+    <img class="db-logo" [src]="list.logo">
+    <p class="db-name">{{list.name}}</p>
+  </div>
+</div>

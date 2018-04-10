@@ -19,9 +19,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/@clr/ui/clr-ui.css",
+        "../node_modules/@clr/icons/clr-icons.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/@clr/icons/clr-icons.min.js",
+        "../node_modules/@webcomponents/custom-elements/custom-elements.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

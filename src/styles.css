@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+.side-padding{
+    padding: .5rem;
+    border-bottom: 1px solid #ccc;
+    color: #003D79;
+    font-weight: bold;
+    cursor: pointer;
+}
+.side-padding-off{
+    padding: .5rem;
+    border-bottom: 1px solid #ccc;
+    color: #0095D3;
+    font-weight: bold;
+    cursor: pointer;
+}
+.db-box{
+    float: left;
+    width: 20%;
+    height: 4rem;
+    border: 1px solid #ccc;
+    padding: .5rem;
+    margin: .5rem;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.db-logo{
+    height: 2.5rem;
+    padding-top: .2rem;
+}
+.db-name{
+    text-align: center;
+}
+.search-box{
+    text-align: center;
+}
+.search-box .search-input{
+    border:1px solid #ccc;
+    padding: .7rem;
+    width: 10rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+.search-label{
+    margin-left: -15px;
+    padding-top: 5px;
+}
+.selecting-box{
+    width: 100%;
+    padding-left: 1rem;
+    height: 3.5rem;
+}
+.select-margin{
+    margin-right: 1rem;
+}
+.select-title{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.chart-container{
+    display: inline-block;
+}
+.line-chart{
+    width: 20rem;
+    height: 10rem;
+}
+.map-container{
+    margin-top: -0rem;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+.map{
+    width: 25rem;
+    height: auto;
+}
+.map-title{
+    /* margin-top: -7rem; */
+    font-size: .5rem;
+    font-weight: bold;
+    text-align: center;
+}
