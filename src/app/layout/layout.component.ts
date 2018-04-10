@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
-  database: boolean = false;
-  dashboard: boolean = true;
+  database: boolean = true;
+  dashboard: boolean = false;
   message:string;
 
   constructor() { }
