@@ -43,6 +43,15 @@ export class DashboardComponent implements OnInit {
       // animation: true,
       // animationSteps: 60,
       responsive: false,
+      tooltips: {
+        enabled: true,
+        mode: 'single',
+        callbacks: {
+            label: function(tooltipItems, data) { 
+                return tooltipItems.yLabel + '%';
+            }
+        }
+    },
       title:{
         display:true,
         text:'New vs Churned Customers'
@@ -80,6 +89,18 @@ export class DashboardComponent implements OnInit {
     options: {
       // animation: true,
       // animationSteps: 60,
+      tooltipTemplate: '<%= datasetLabel %> - <%= value.toLocaleString() %>',
+      tooltips: {
+        enabled: true,
+        mode: 'single',
+        callbacks: {
+            label: function(tooltipItems, data) { 
+              var m = tooltipItems.yLabel;
+              var tip = m.toLocaleString();
+                return tip;
+            }
+        }
+    },
       responsive: false,
       title:{
         display:true,
@@ -95,6 +116,8 @@ export class DashboardComponent implements OnInit {
     }
     });
   }
+
+  
 
   pieChart(){
     this.bar = new Chart('pie-chart', {
@@ -132,6 +155,16 @@ export class DashboardComponent implements OnInit {
       ]
     },
     options: {
+      tooltips: {
+        enabled: true,
+        mode: 'single',
+        callbacks: {
+            label: function(tooltipItems, data) { 
+              var val = data.datasets[0].data[tooltipItems.index]
+                return val + '%';
+            }
+        }
+    },
       segmentShowStroke: true,
       segmentStrokeColor: "#fff",
       segmentStrokeWidth: 2,
